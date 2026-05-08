@@ -1,0 +1,31 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 24) rotate(55) scale(80 80)">
+      <stop stop-color="#60A5FA" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#2563EB" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="b" x1="18" y1="18" x2="78" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="
+        0 0 0 0 0.376
+        0 0 0 0 0.647
+        0 0 0 0 0.98
+        0 0 0 0.7 0" result="c"/>
+      <feMerge>
+        <feMergeNode in="c"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="48" cy="48" r="40" fill="url(#g)"/>
+  <circle cx="48" cy="48" r="32" fill="#0B1225" fill-opacity="0.65" stroke="url(#b)" stroke-width="2" filter="url(#glow)"/>
+  <path d="M31 62V34H37.8V44.8H49.1V34H56V62H49.1V50.8H37.8V62H31Z" fill="white" fill-opacity="0.92"/>
+  <path d="M61 62V34H68C72.9 34 76 36.8 76 41.2C76 44.3 74.5 46.4 72.1 47.2C74.8 48.1 76.6 50.4 76.6 53.4C76.6 58.4 73.1 62 67.4 62H61ZM67.6 39.5H67.1V45.2H67.7C69.5 45.2 70.5 44.2 70.5 42.4C70.5 40.6 69.4 39.5 67.6 39.5ZM67.8 50.2H67.1V56.5H68C70.1 56.5 71.2 55.3 71.2 53.3C71.2 51.3 70.1 50.2 67.8 50.2Z" fill="white" fill-opacity="0.92"/>
+</svg>
+
