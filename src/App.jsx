@@ -376,6 +376,21 @@ export default function App() {
         {/* PROJECTS */}
         <section id="projects" className="py-16 sm:py-20">
           <SectionHeading eyebrow="Projects" title="Live GitHub + featured builds" subtitle="Glass cards powered by the GitHub REST API, plus featured products in the pipeline." />
+          <div className="container-pad mt-4">
+            <div className="flex flex-col gap-3 rounded-2xl border border-[rgba(96,165,250,0.2)] bg-white/5 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+              <p className="text-sm font-semibold text-slate-200">
+                35+ projects you can check on GitHub profile.
+              </p>
+              <a
+                href={IDENTITY.github}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-primary w-full sm:w-auto"
+              >
+                Visit GitHub Profile →
+              </a>
+            </div>
+          </div>
 
           <div className="container-pad mt-10 grid gap-5 lg:grid-cols-3">
             {FEATURED_PROJECTS.map((p) => (
